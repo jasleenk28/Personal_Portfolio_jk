@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <!-- ---- header ---- -->
+    
+    <header>
+      <a href="#" class="logo"> <img src="My project (1).png" /></a>
+      <div class="bx bx-menu" id="menu-icon" ></div>
+
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+    </header>
+
+    <!-- --------home------- -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hello, I'm</h3> 
+            <h1>Jasleen Kaur</h1>
+            <h2>A Software Developer</h5>
+            <p>"Imperfection is beauty, madness is genius<br>and it's better to be absolutely ridiculous than absolutely boring."</p>
+            <div class="social">
+                <a href="https://auth.geeksforgeeks.org/user/jasleendiro" target="_blank"><iconify-icon icon="simple-icons:geeksforgeeks"></iconify-icon></a> 
+                <a href="https://leetcode.com/jasleenk28/" target="_blank"><iconify-icon icon="simple-icons:leetcode"></iconify-icon></a> 
+                <a href="https://linkedin.com/in/jasleen-kaur-533926267" target="_blank"><iconify-icon icon="ri:linkedin-fill"></iconify-icon></a> 
+                <a href="https://github.com/jasleenk28" target="_blank"><iconify-icon icon="mdi:github"></iconify-icon></a>
+            </div> 
+            <!-- <a href="#" class="btn">Download CV</a> -->
+            <a href="jasleen resume.pdf" download class="btn"
+            >Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="jas main.png" alt="">
+        </div>
+</section>
+
+<!------- About me page------->
+<section id="about">
+      <div class="infoAbout">
+        <h1>About me</h1>
+        <p>
+          I am a punctual and motivated individual who is able to work in a busy
+          environment. I am an excellent team worker and am able to take
+          instructions from all levels.
+        </p>
+      </div>
+
+      <div class="imgNExpCont">
+        <div class="imgAbout"><img src="jasleen main.png" alt="" /></div>
+        <div class="expNskills">
+            <span class="Alinks active" onclick="opentab('skills')"
+              >Skills</span>
+            <span class="Alinks" onclick="opentab('education')">Education</span>
+          <div class="linkContent activeTab" id="skills">
+            <div class="progress">
+              <h3>DSA <span>85%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>C++ <span>80%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>HTML <span>75%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>CSS <span>75%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+              <h3>JAVASCRIPT <span>65%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+          </div>
+
+          <div class="linkContent" id="education">
+            <ul class="icons">
+              <li>
+                2021-2025 <br />
+                Bachelor of Computer Engineering <br />
+                Thapar Institute of Engineering and Technology
+              </li>
+
+              <li>
+                2019-2020 <br />
+                Senior Secondary School <br />
+                The S.D Vidya School
+              </li>
+
+              <li>
+                2017-2018 <br />
+                High School <br />
+                The S.D Vidya School
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+   <!-- ------My projects page------ -->
+   <section id="projects">
+    <div class="projectContainer">
+    <div class="headingP">
+    <h1>My Projects</h1>
+    </div>
+    <div class="projectWork">
+      <div class="project">
+        <img src="tic tac toe1.png" alt="" />
+        <div class="layer social">
+          <h3 id="tic">TIC TAC TOE</h3>
+          <a href="https://github.com/jasleenk28/Tic_Tac_Toe" target="_blank"
+            ><iconify-icon icon="tabler:external-link"></iconify-icon></a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="drums.jpg" alt="" />
+        <div class="layer social">
+          <h3>DRUM KIT</h3>
+          <a href="https://github.com/jasleenk28/Drum-Kit" target="_blank"
+            ><iconify-icon icon="tabler:external-link"></iconify-icon></a>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+  <!-- ------Contact Me----- -->
+  <section id="contact">
+      <div class="contactCont2">
+        <div class="left">
+          <h1>Contact <span>me</span> </h1>
+          <div class="left1">
+            <img src="send.png" alt="">
+            <h3>bedijas2802@gmail.com</h3>
+          </div>
+          <div class="left1">
+            <img src="call2.png" alt="">
+            <h3>+91-9896536196</h3>
+          </div>
+          
+        </div>
+        <div class="right">
+          <form id="myform">
+            <input
+              type="text"
+              name="Name"
+              placeholder="Enter your name"
+              required
+             id="input1">
+            <input
+              type="text"
+              name="Email"
+              placeholder="Enter your e-mail id"
+              required
+             id="input2">
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Type your message"
+            id="textbox1"></textarea>
+            <!-- <button type="submit" class="btn" onclick="clearText()">Submit</button> -->
+            <button type="submit" class="btn" onclick="clearText()">Submit</button>
+            <!-- <a href="#" class="btn"  onclick="clearText()">Submit</a> -->
+            <p id = "output"> </p>
+          </form>
+        </div>
+      </div>
+    
+</section>
+<div class="footbar"><p>Copyright © Jasleen</p></div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
